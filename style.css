@@ -1,0 +1,199 @@
+/* Css Reset */
+* {
+    margin: 0px;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Varibles */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+}
+
+/* Navigation bar: logo and image */
+#logo {
+    margin: 10px 29px;
+}
+
+#logo img {
+    height: 60px;
+    margin: 3px 5px;
+}
+
+/* Navigation Bar : list styling */
+#navbar ul {
+    display: flex;
+    font-family: sans-serif;
+}
+
+#navbar ul li {
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+
+}
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 420px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('background.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.90;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* services section */
+#services {
+    margin: 34px;
+
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    margin: 2px 4px;
+    padding: 34px;
+    border-radius: 28px;
+    background-color: #dfdede;
+    margin-bottom: 20px;
+}
+
+
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p {
+    font-family: cursive;
+}
+
+
+/* utility classes */
+.h-primary {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4.8rem;
+    padding: 12px;
+}
+
+.h-secondry {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.graphic {
+    border: 2px solid brown;
+    margin: 2px 4px;
+    padding: 34px;
+    border-radius: 28px;
+    background-color: #dfdede;
+    margin-bottom: 20px;
+}
+
+.graphic img {
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+
+#contact {
+    border: 2px solid brown;
+    margin: 2px 2px;
+    padding: 34px;
+    background-color: #dfdede;
+    border-radius: 28px;
+    margin-bottom: 20px;
+}
+
+.center {
+    text-align: center;
+
+}
+
+.btn {
+    border: none;
+    border-radius: 8px;
+    padding: 15px 32px;
+    background-color: rgb(25, 214, 25);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 60px;
+}
+
+.btn:hover {
+    background-color: rgb(171, 210, 171);
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
